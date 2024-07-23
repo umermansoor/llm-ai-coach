@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "llm-ai-coach"
+version = "0.0.1"
+description = "An AI Coach that uses LLMs"
+authors = ["Umer Mansoor"]
+readme = "README.md"
+packages = [{include = "aicoach"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+semantic-kernel = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
